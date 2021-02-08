@@ -1,5 +1,7 @@
 h1 {
-    color: green
+    color: green;
+    margin: 30px;
+    padding: 10px;
 }
 
 .header{
@@ -21,4 +23,51 @@ h1 {
 
 p, h2{
     text-align: center;
+}
+
+body{
+    background-color: #808080;
+}
+
+.header *{
+    border: solid;
+}
+
+.menu{
+    margin: 30px;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.menu a{
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+
+a:link{
+    color: #FFFFFF;
+}
+
+a:visited{
+    color: #000000;
+}
+
+.item{
+    position:relative;
+}
+
+.item p{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.item:hover p{
+    opacity: 1;
+}
+
+.item:hover img{
+    opacity:0.33;
 }
